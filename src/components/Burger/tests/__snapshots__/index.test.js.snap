@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Burger Wrapper shoudl render without blowing up 1`] = `
+<div
+  className="sc-bdVaJa jYmIid"
+/>
+`;
+
+exports[`<Burger should render without blowing up 1`] = `
+<styled.div>
+  <styled.div />
+  <Styled(styled.div) />
+  <styled.div />
+</styled.div>
+`;
