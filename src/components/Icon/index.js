@@ -6,13 +6,10 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components/native';
 import SvgIcon from 'react-native-svg-icon';
 import iftheme from 'theme/iftheme';
 
 import icons from './icons';
-
-console.log(icons);
 
 const Icon = ({ name, fill, style, ...props }) => {
   thmFill = iftheme[fill] || iftheme.green;

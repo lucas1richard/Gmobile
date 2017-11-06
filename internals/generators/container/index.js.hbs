@@ -1,0 +1,51 @@
+/* @flow */
+
+/*
+ *
+ * {{properCase name }}
+ *
+ */
+
+import type { Dispatch } from 'redux';
+import React from 'react';
+import { Text } from 'react-native';
+import { connect } from 'react-redux';
+{{#if wantActionsAndReducer}}
+import { createStructuredSelector } from 'reselect';
+import makeSelect{{properCase name}} from './selectors';
+{{/if}}
+
+type Props = {
+  dispatch: Dispatch<*>
+}
+
+export class {{ properCase name }} extends React.{{{ component }}} { // eslint-disable-line react/prefer-stateless-function
+  props: Props;
+
+  render() {
+    return (
+      <Text>
+        My Connected component
+      </Text>
+    );
+  }
+}
+
+
+{{#if wantActionsAndReducer}}
+const mapStateToProps = createStructuredSelector({
+  {{name}}: makeSelect{{properCase name}}(),
+});
+{{/if}}
+
+function mapDispatchToProps(dispatch: Dispatch<*>) {
+  return {
+    dispatch,
+  };
+}
+
+{{#if wantActionsAndReducer}}
+export default connect(mapStateToProps, mapDispatchToProps)({{ properCase name }});
+{{else}}
+export default connect(null, mapDispatchToProps)({{ properCase name }});
+{{/if}}

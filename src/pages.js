@@ -1,7 +1,12 @@
+// @flow
+
+import iftheme from 'theme/iftheme';
 import HomeScreen from 'containers/Home';
 import CreditScore from 'containers/CreditScore';
 import Drawings from 'containers/Drawings';
 import Recommendations from 'containers/Recommendations';
+
+console.log(iftheme);
 
 const pagesModule = {
   pages: {

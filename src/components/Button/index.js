@@ -1,13 +1,8 @@
-import styled from 'styled-components/native';
-
 import Platform from 'Platform';
 import React from 'React';
 import PropTypes from 'prop-types';
-import StyleSheet from 'StyleSheet';
-import Text from 'components/Text';
 import TouchableNativeFeedback from 'TouchableNativeFeedback';
 import TouchableOpacity from 'TouchableOpacity';
-import View from 'View';
 import invariant from 'fbjs/lib/invariant';
 
 import { Wrapper, Title } from './styled';

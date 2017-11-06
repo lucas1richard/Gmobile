@@ -1,8 +1,11 @@
 import React from 'react';
 
 import { View } from 'react-native';
+import iftheme from 'theme/iftheme';
 import Text from 'components/Text';
 import Icon from 'components/Icon';
+
+console.log(iftheme);
 
 class CreditScore extends React.Component {
   static navigationOptions = {

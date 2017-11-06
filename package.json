@@ -1,14 +1,23 @@
 {
   "main": "node_modules/expo/AppEntry.js",
   "private": true,
+  "scripts": {
+    "generate": "plop --plopfile internals/generators/index.js"
+  },
   "dependencies": {
+    "axios": "^0.17.0",
     "expo": "^22.0.0",
+    "immutable": "^3.8.2",
     "react": "^16.0.0-beta.5",
     "react-native": "https://github.com/expo/react-native/archive/sdk-22.0.2.tar.gz",
     "react-native-svg": "^5.4.2",
     "react-native-svg-icon": "^0.7.0",
     "react-native-vector-icons": "^4.4.2",
     "react-navigation": "^1.0.0-beta.19",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-form": "^7.1.2",
+    "redux-immutable": "^4.0.0",
     "redux-saga": "^0.16.0",
     "styled-components": "^2.2.3"
   },
@@ -21,10 +30,14 @@
     "eslint-plugin-import": "^2.6.1",
     "eslint-plugin-jsx-a11y": "^5.0.1",
     "eslint-plugin-react": "^7.1.0",
-    "eslint-plugin-redux-saga": "^0.1.5"
+    "eslint-plugin-redux-saga": "^0.1.5",
+    "flow-bin": "^0.58.0",
+    "inquirer-directory": "^2.1.0",
+    "plop": "^1.9.0"
   },
   "name": "expotest",
   "version": "0.0.0",
   "description": "Hello Expo!",
-  "author": "Grand"
+  "author": "Grand",
+  "flow": "flow"
 }

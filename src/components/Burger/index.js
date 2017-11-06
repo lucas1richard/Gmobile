@@ -1,10 +1,11 @@
+// @flow
+
 /**
 *
 * Burger
 *
 */
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components/native';
 
 export const Wrapper = styled.View`
@@ -24,18 +25,14 @@ const MiddleLine = styled.View`
   background: ${(props) => props.color ? props.theme[props.color] : '#bfbfbf'};
 `;
 
-function Burger({ ...rest }) {
+function Burger() {
   return (
-    <Wrapper {...rest}>
-      <Line {...rest} />
-      <MiddleLine {...rest} />
-      <Line {...rest} />
+    <Wrapper >
+      <Line />
+      <MiddleLine />
+      <Line />
     </Wrapper>
   );
 }
-
-Burger.propTypes = {
-  rest: PropTypes.object
-};
 
 export default Burger;

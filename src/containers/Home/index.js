@@ -16,6 +16,11 @@ class Home extends React.Component {
     title: 'Jackpot Savings',
     tabBarIcon: <Icon height="24" width="24" fill="darkGreen" name="moneyBox" />
   };
+
+  static propTypes = {
+    navigation: PropTypes.object
+  };
+
   render() {
     const { navigate } = this.props.navigation;
     return (
@@ -49,9 +54,5 @@ class Home extends React.Component {
     );
   }
 }
-
-Home.propTypes = {
-  navigation: PropTypes.object
-};
 
 export default Home;
